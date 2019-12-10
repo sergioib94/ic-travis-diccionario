@@ -13,3 +13,4 @@ jobs:
       run: sudo apt-get install aspell-es 
     - name: spell
       run: OUTPUT=`cat doc/*.md | aspell list -d es -p ./.aspell.es.pws`; if [ -n "$OUTPUT" ]; then echo $OUTPUT; exit 1; fiecho Hello, world!
+
